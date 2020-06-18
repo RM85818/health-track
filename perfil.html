@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/site.css">
+    <title>Health Track - Perfil</title>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logo"
+                                alt="Logo do Health Track" class="img-responsive img-size"></a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li aria-hidden="true" class="glyphicon" title="Dashboard"><a href="dashboard.html"><img
+                                    src="images/glyphicons/png/glyphicons-21-home.png" alt="Dashboard"></a></li>
+                        <li aria-hidden="true" class="glyphicon" title="Lista de Peso"><a href="peso.html"><img
+                                    src="images/glyphicons/png/glyphicons-554-scale.png" alt="Lista de Peso"></a></li>
+                        <li aria-hidden="true" class="glyphicon" title="Lista de Alimentação"><a
+                                href="alimentacao.html"><img src="images/glyphicons/png/glyphicons-277-cutlery.png"
+                                    alt="Lista de Alimentação"></a></li>
+                        <li aria-hidden="true" class="glyphicon" title="Lista de Atividade Física"><a
+                                href="atfisica.html"><img src="images/glyphicons/png/glyphicons-635-teenager.png"
+                                    alt="Lista de Atividades Físicas"></a></li>
+                        <li aria-hidden="true" class="glyphicon" title="Lista de Pressão Arterial"><a
+                                href="pressartl.html"><img src="images/glyphicons/png/glyphicons-672-heartbeat.png"
+                                    alt="Lista de Pressão Arterial"></a></li>
+
+                    </ul>
+
+                    <div class="right-side">
+                        <span class="navbar-text .right-side-button">
+                            <p>Olá,Rafael!</p>
+                        </span>
+
+
+                        <a class=".right-side-button" href="perfil.html">Ver Perfil | </a>
+
+
+                        <a class=".right-side-button" href="index.html">Sair</a>
+                    </div>
+
+            </nav>
+
+
+        </header>
+    </div>
+    <div class="conteudo">
+        <div class="hidden-xs hidden-sm col-md-3">
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 ">
+            <div class="panel panel-success jumbotron">
+                <div class="text-center panel-heading h4">Perfil</div>
+                <div class="panel-body">
+                    <form class="form-group" action="dashboard.html" method="post">
+                        <div class="form-group">
+                            <label for="exampleInputName2">Nome Completo</label>
+                            <input type="text" class="form-control" id="exampleInputName1" value="Rafael Silva Romualdo"
+                                readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Data de nascimento</label>
+                            <input type="datetime-local" class="form-control" id="exampleInputPassword" placeholder="01/01/1970"
+                                value="05/07/1993" >
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label> Gênero </label>
+                            </div>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Masc" checked
+                                    > Masculino
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="Fem">
+                                Feminino
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Altura (m)</label>
+                            <input type="text" class="form-control" id="exampleInputPassword2" value="1,80m" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">E-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" value="xpto@gmail.com.br"
+                                >
+                        </div>
+                        <button type="button" class="btn btn-success btn-md" href="dashboard.html">
+                            Salvar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="hidden-xs hidden-sm col-md-3">
+        </div>
+    </div>
+</body>
+
+</html>
